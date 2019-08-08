@@ -21,13 +21,13 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LSFT,KC_NUBS,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSFT,     KC_UP,  KC_PGDN,\
                  KC_LCTL,KC_FN0,KC_LGUI,               KC_SPC,           KC_RALT,KC_RCTL,KC_TRNS,KC_LEFT,KC_DOWN,KC_RGHT \
     ),
-    /* Layer 0: Default Layer
+    /* Layer 1: Second Layer
      * ,---------------------------------------------------------------.
      * |`  | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|DEL|HOM|END|
      * |---------------------------------------------------------------|
-     * |Tab  |  Q|Up |  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|\    |Fn0|
+     * |Tab  |  Q|PgU |  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|\   |Fn0|
      * |---------------------------------------------------------------|
-     * |Esc|Lef|Dow|Rig|  F|  G|Lef|Dow|Up |Rig|  ;|  '|Enter      |VlU|
+     * |Esc|VlD|PgD|VlU|  F|  G|Lef|Dow|Up |Rig|  ;|  '|Enter      |VlU|
      * |---------------------------------------------------------------|
      * |CAPS|   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Up |VlD|
      * |---------------------------------------------------------------|
@@ -36,8 +36,8 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [1] = LAYOUT( \
         KC_TRNS,KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10, KC_F11, KC_F12, KC_TRNS,KC_TRNS,KC_TRNS,\
-        KC_TRNS,KC_TRNS,KC_UP  ,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_PSCR,KC_SLCK,KC_PAUS,KC_TRNS,     KC_TRNS,\
-        KC_TRNS,KC_LEFT,KC_DOWN,KC_RIGHT,KC_TRNS,KC_TRNS,KC_LEFT,KC_DOWN,KC_UP  ,KC_RIGHT,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_VOLU,\
+        KC_TRNS,KC_TRNS,KC_PGUP  ,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_PSCR,KC_SLCK,KC_PAUS,KC_TRNS,     KC_TRNS,\
+        KC_TRNS,KC__VOLUP,KC_PGDOWN,KC__VOLDOWN,KC_TRNS,KC_TRNS,KC_LEFT,KC_DOWN,KC_UP  ,KC_RIGHT,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_VOLU,\
         KC_CAPS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_VOLD,\
         KC_TRNS,KC_TRNS,KC_TRNS,               KC_TRNS,          KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS  \
     ),
